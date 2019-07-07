@@ -1,0 +1,6 @@
+{
+    getAllPersons(input: {}) {
+        _id
+        name
+    }
+}

@@ -1,0 +1,35 @@
+input PersonInput {
+    name: String
+}
+
+input GetPersonInput {
+    _id: String
+}
+
+input UpdatePersonInput {
+    _id: ID!
+
+    person: PersonInput
+}
+
+type Person {
+    _id: ID!
+
+    name: String
+}
+
+type DeletedCount {
+    deletedCount: Int
+}
+
+
+type Query {
+    getPerson(input: GetPersonInput!): Person
+    getAllPersons(input: GetPersonInput): [Person]
+}
+
+type Mutation {
+    createPerson(input: PersonInput) : Person
+    updatePerson(input: UpdatePersonInput): Person
+    deletePerson(input: GetPersonInput): DeletedCount
+}

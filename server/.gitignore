@@ -1,0 +1,32 @@
+coverage
+dist
+node_modules
+package-lock.json
+reports
+test/functional/errorShots
+.eslintcache
+*.log
+wdio.override.js
+wdio.bdd.override.js
+
+# VS Code
+.vscode
+jsconfig.json
+
+# IntelliJ
+.idea
+*.iml
+
+# Eclipse
+.project
+.settings
+
+# Mac
+.DS_Store
+
+# Allure
+allure-report
+allure-results
+
+# Ignore anything with .local
+*.local

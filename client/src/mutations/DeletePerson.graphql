@@ -1,0 +1,5 @@
+mutation deletePerson($input: GetPersonInput) {
+    deletePerson(input: $input) {
+        deletedCount
+    }
+}
