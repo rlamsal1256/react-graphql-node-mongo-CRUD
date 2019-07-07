@@ -1,1 +1,1 @@
-# react-graphql-node-mongo-setup
+# React-graphql-node-mongo-CRUD
